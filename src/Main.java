@@ -25,30 +25,23 @@ public class Main {
         for(String value : creatures){
             System.out.println(value);
         }
-
         System.out.println("＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝");
 
-        /*Mapのkeyと値の両方を取るメソッド*/
-        for (Map.Entry<String, String> entry : creaturesMap.entrySet()) {
-            System.out.println(entry.getKey() + " : " + entry.getValue());
-        }
-
-        System.out.println("＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝");
-
-        /*Mapのkeyを取得するメソッドとif文の追加*/
+        /*Mapのkeyを取得するメソッド*/
         for (String key : creaturesMap.keySet()) {
-            if(key.equals("鳥類")){
-                System.out.println("キジは鳥類");
-            } else {
-                System.out.println(key +"は鳥類ではない");
-            }
+            System.out.println(key);
         }
-
         System.out.println("＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝");
 
         /*Mapの値(values)を取得するメソッド*/
         for (String val : creaturesMap.values()) {
             System.out.println(val);
+        }
+        System.out.println("＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝");
+
+        /*Mapのkeyと値の両方を取得するメソッド*/
+        for (Map.Entry<String, String> entry : creaturesMap.entrySet()) {
+            System.out.println(entry.getKey() + " : " + entry.getValue());
         }
     }
 }
