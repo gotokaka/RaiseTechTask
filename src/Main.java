@@ -38,6 +38,10 @@ public class Main {
         for (String val : creaturesMap.values()) {
             System.out.println(val);
         }
+        /*Mapのkeyと値の両方を取るメソッド*/
+        for (Map.Entry<String, String> entry : creaturesMap.entrySet()) {
+            System.out.println(entry.getKey() + " : " + entry.getValue());
+        }
 
     }
 }
