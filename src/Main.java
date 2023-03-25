@@ -10,7 +10,7 @@ public class Main {
         /*メソッドを定義する*/
         creatures.add("ゾウ");
         creatures.add("タカ");
-        creatures.add("サンマ");
+        creatures.add("さば");
         /*Mapの宣言。*/
         Map< String,String> creaturesMap = new HashMap<>();
         /*メソッドを定義する*/
